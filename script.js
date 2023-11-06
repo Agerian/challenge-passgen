@@ -10,5 +10,5 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// Add event listener to generate button Testing Git
 generateBtn.addEventListener("click", writePassword);
