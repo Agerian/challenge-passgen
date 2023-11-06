@@ -23,6 +23,20 @@ if (passwordLength < 8 || passwordLength > 20) {
   return "";
 }
 
+var allChar = "";
+if (incLowercase) {
+  allChar += lowerCase;
+}
+if (incUppercase) {
+  allChar += upperCase;
+}
+if (incNumber) {
+  allChar += number;
+}
+if (incSpecial) {
+  allChar += special;
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
