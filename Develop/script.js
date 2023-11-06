@@ -10,6 +10,13 @@ var incLowercase = confirm("Include lowercase letters?");
 var incUppercase = confirm("Include uppercase letters?");
 var incNumber = confirm("Include numbers?");
 var incSpecial = confirm("Include special characters?");
+var passwordLength = prompt("Enter the length of the password (8 - 20):");
+passwordLength = Number(passwordLength);
+
+if (passwordLength !== number) {
+  alert("Password is not a number");
+  return "";
+}
 
 // Write password to the #password input
 function writePassword() {
