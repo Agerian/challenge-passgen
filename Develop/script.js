@@ -18,6 +18,11 @@ if (passwordLength !== number) {
   return "";
 }
 
+if (passwordLength < 8 || passwordLength > 20) {
+  alert("Password length must be between 8 and 20 charcters.");
+  return "";
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
